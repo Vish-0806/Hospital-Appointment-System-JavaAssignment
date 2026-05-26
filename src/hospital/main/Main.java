@@ -1,6 +1,8 @@
 package hospital.main;
 
-import hospital.database.DBConnection;
+import hospital.gui.LoginFrame;
+
+import javax.swing.SwingUtilities;
 
 /**
  * Application entry point for the Hospital Appointment Management System.
@@ -8,11 +10,11 @@ import hospital.database.DBConnection;
 public class Main {
 
 	/**
-	 * Starts the application and initializes the database connection.
+	 * Starts the application by opening the login screen.
 	 *
 	 * @param args command-line arguments
 	 */
 	public static void main(String[] args) {
-		DBConnection.getConnection();
+		SwingUtilities.invokeLater(() -> new LoginFrame().setVisible(true));
 	}
 }
