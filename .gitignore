@@ -1,0 +1,49 @@
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Eclipse files
+.project
+.classpath
+.settings/
+
+# Build folders
+/bin/
+/out/
+/target/
+/build/
+
+# IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Maven
+target/
+
+# Gradle
+.gradle
+build/
+
+# NetBeans
+nbproject/private/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Crash logs
+hs_err_pid*
+
+# Temporary files
+*.tmp
+*.bak
