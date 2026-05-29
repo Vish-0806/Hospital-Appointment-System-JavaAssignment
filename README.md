@@ -1,18 +1,48 @@
-## Getting Started
+**Hospital Appointment System**
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+**Description:** A simple Java desktop application for managing doctors, patients, and appointments. This project is a student assignment and demonstrates basic CRUD operations, a Swing-based GUI, and a small layered architecture.
 
-## Folder Structure
+**Features:**
+- Manage doctors and patients
+- Create, view and cancel appointments
+- Simple local database connection via `DBConnection`
 
-The workspace contains two folders by default, where:
+**Prerequisites:**
+- JDK 11 or newer installed and on your PATH
+- (Optional) VS Code with the Java Extension Pack for easy development and running
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+**Folder structure:**
+- `src/` — Java source files (package `hospital`)
+- `lib/` — external libraries (if any)
+- `bin/` — compiled classes (generated after building)
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Key packages:
+- `hospital.main` — contains `Main.java` (application entry point)
+- `hospital.gui` — Swing UI frames
+- `hospital.models`, `hospital.services`, `hospital.database` — core app logic and DB connection
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+**Build & Run (recommended: use an IDE)**
+1. Open the project in VS Code or another Java IDE and run `Main.java` located at `src/hospital/main/Main.java`.
 
-## Dependency Management
+**Command-line (example):**
+- Compile (from project root, requires shell that supports recursive globs or build via IDE):
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+	Windows (PowerShell with JDK in PATH):
+
+	```powershell
+	mkdir -Force bin
+	Get-ChildItem -Path src -Recurse -Filter *.java | ForEach-Object { javac -d bin -cp "lib/*" $_.FullName }
+	```
+
+- Run the app:
+
+	```powershell
+	java -cp "bin;lib/*" hospital.main.Main
+	```
+
+**Notes:**
+- The project was structured for educational use; adjust classpath or IDE run configuration as needed.
+
+**Author:** Vishal (assignment)
+
+For more details, open the UI frames under `src/hospital/gui` or inspect services in `src/hospital/services`.
