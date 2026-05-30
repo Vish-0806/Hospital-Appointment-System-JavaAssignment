@@ -1,6 +1,8 @@
 **Hospital Appointment System**
 
-**Description:** A simple Java desktop application for managing doctors, patients, and appointments. This project is a student assignment and demonstrates basic CRUD operations, a Swing-based GUI, and a small layered architecture.
+Hospital Appointment System
+
+Simple Java Swing app to manage doctors, patients, and appointments.
 
 **Features:**
 - Manage doctors and patients
@@ -22,7 +24,7 @@ Key packages:
 - `hospital.models`, `hospital.services`, `hospital.database` — core app logic and DB connection
 
 **Build & Run (recommended: use an IDE)**
-1. Open the project in VS Code or another Java IDE and run `Main.java` located at `src/hospital/main/Main.java`.
+Run (IDE): open and run `hospital.main.Main`.
 
 **Command-line (example):**
 - Compile (from project root, requires shell that supports recursive globs or build via IDE):
@@ -45,4 +47,4 @@ Key packages:
 
 **Author:** Vishal (assignment)
 
-For more details, open the UI frames under `src/hospital/gui` or inspect services in `src/hospital/services`.
+Author: Vishal
